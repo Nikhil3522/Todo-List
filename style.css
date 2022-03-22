@@ -1,0 +1,183 @@
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+}
+
+@keyframes convert {
+    from {
+      border-radius: 10%;
+    }
+  
+    to {
+      border-radius: 20%;
+    } 
+
+  }
+
+.complete{
+    text-decoration: line-through;
+}
+
+#container{
+    background-color: #fae3f5;
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px;
+    animation: convert 2s infinite ease-in-out alternate;
+    min-height: 400px;
+}
+
+#myItem{
+    width: 350px;
+    height: 35px;
+    font-size: 25px;
+    margin-left: 20%;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+#btn{
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: white;
+    cursor: pointer;
+}
+
+#extraFeatures{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+#extraFeatures button{
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.listDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px gray;
+    margin-bottom: 10px;
+    margin-left: 16%;
+    height: 25px;
+    font-size: 20px;
+}
+
+.listDiv:hover{
+    box-shadow: 2px 2px 2px 2px gray;
+    border: 1px solid red;
+}
+
+.fa-times{
+    color: red;
+    pointer-events: none;
+}
+
+.fa-check{
+    color: greenyellow;
+    pointer-events: none;
+}
+
+/* Button Style */
+#empty, #deleteCheck{
+    background-color: tomato;
+    color: white;
+    box-shadow: 1px 1px 1px gray;
+    border: none;
+
+}
+
+#empty:hover, #deleteCheck:hover{
+    background-color: red;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+#allCheck{
+    background-color: aqua;
+    color: white;
+    box-shadow: 1px 1px 1px gray;
+    border: none;
+}
+
+#allCheck:hover{
+    background-color: rgb(49, 240, 240);
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+@media only screen and (max-device-width: 1120px ) and  (min-device-width: 420px){
+    #container{
+        width: 70%;
+        margin-left: 15%;
+    }
+} 
+
+@media only screen and (max-device-width : 415px) and  (min-device-width: 320px){
+    #container{
+        /* background-color: white; */
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 50px ;
+        padding-top: 50px;
+    }
+    #myItem{
+        width: 70%;
+        margin-left: 10%;
+        height: 110px;
+        font-size: 50px;
+    }
+    #btn{
+        height: 90px;
+        width: 90px;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    #extraFeatures{
+        height: 80px;
+        width: 750px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #extraFeatures button{
+        height: 75px;
+        width: 155px;
+        font-size: 30px;
+    }
+    #extraFeatures p{
+        font-size: 30px;
+    }
+    #count{
+        font-size: 50px;
+    }
+    .listDiv{
+        height: 80px;
+        width: 90%;
+        margin-left: 5px;
+        font-size: 50px;
+        vertical-align: middle;
+        overflow:visible;
+        
+    }
+    .fa-check, .fa-times{
+        width: 70px;
+        font-size: 60px;
+    }
+}
