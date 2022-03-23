@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Todo List</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    </head>
-    <body>
-        <div id="container">
-            <input type="text" id="myItem" placeholder="Type Your Todo list...">
-            <button id="btn" onclick="addList()">
-                Add
-            </button>
 
-            <div id="extraFeatures">
-                <p><i id="count">0</i> tasks left</p>
-                <button id="empty"><i class="fa fa-ban"></i> Empty list</button> 
-                <button id="deleteCheck" onclick="deleteCheck()"><i class="fa fa-trash"></i> Delete check</button>
-                <button id="allCheck" onclick="allCheck()"><i class="fa fa-check-double"></i>All Check</button>
-            </div>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
 
-            <ul id="list">     
-            </ul>
+<body>
+    <!-- This Div is main Container inside body-->
+    <div id="container">
+        <input type="text" id="myItem" placeholder="Type Your Todo list...">
+        <button id="btn" onclick="addList()">
+            Add
+        </button>
 
-
-
+        <!-- This Div is for button and task count  -->
+        <div id="extraFeatures">
+            <p><i id="count">0</i> tasks left</p>
+            <button id="empty"><i class="fa fa-ban"></i> Empty list</button>
+            <button id="deleteCheck" onclick="deleteCheck()"><i class="fa fa-trash"></i> Delete check</button>
+            <button id="allCheck" onclick="allCheck()"><i class="fa fa-check-double"></i>All Check</button>
         </div>
- 
 
-        <script src="script.js"></script>
-    </body>
+        <!-- This is our list -->
+        <ul id="list">
+        </ul>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
 </html>
