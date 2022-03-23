@@ -5,6 +5,9 @@ var count;
 var count2;
 
 function addList(e) {
+    if(inputText.value.length == 0){
+        alert("Please add a task.");
+    }else{
     const listDiv = document.createElement('div');
     listDiv.classList.add('listDiv');
 
@@ -26,9 +29,10 @@ function addList(e) {
     list.appendChild(listDiv);
 
     inputText.value = '';
-
+    
     deleteBtn.addEventListener('click', deleteItem);
     checkBox.addEventListener('click', myCheck);
+    }
  
     counting();
 }

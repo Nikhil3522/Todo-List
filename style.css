@@ -78,7 +78,8 @@ ul{
     box-shadow: 2px 2px 2px gray;
     margin-bottom: 10px;
     margin-left: 16%;
-    height: 25px;
+    min-height: 25px;
+    height: auto;
     font-size: 20px;
 }
 
